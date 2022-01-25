@@ -106,18 +106,18 @@ const checkClick = e => {
 const editTodo = e => {
     todoToEdit = e.target.closest('li')
     popupInput.value = todoToEdit.firstChild.textContent
-    popup.classList.toggle('popupOpen')
+    popup.classList.toggle('popopen')
 }
 
 const closePopup = () => {
-    popup.classList.toggle('popupOpen')
+    popup.classList.toggle('popopen')
     popupInfo.textContent = ''
 }
 
 const changeTodoText = () => {
     if (popupInput.value !== '') {
         todoToEdit.firstChild.textContent = popupInput.value
-        popup.classList.toggle('popupOpen')
+        popup.classList.toggle('popopen')
         popupInfo.textContent = ''
     } else {
         popupInfo.textContent = 'Musisz podać jakąś treść!'

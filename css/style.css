@@ -138,7 +138,7 @@ h1 {
     border-radius: 5px;
 }
 
-.popupOpen {
+.popup.popopen {
     display: flex;
 }
 
