@@ -117,7 +117,7 @@ const closePopup = () => {
 const changeTodoText = () => {
     if (popupInput.value !== '') {
         todoToEdit.firstChild.textContent = popupInput.value
-        popup.classList.remove('popupOpen')
+        popup.classList.toggle('popupOpen')
         popupInfo.textContent = ''
     } else {
         popupInfo.textContent = 'Musisz podać jakąś treść!'
